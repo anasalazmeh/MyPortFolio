@@ -43,7 +43,7 @@
 // };
 
 // export default StarsCanvas;
-import React from 'react'
+
 
 const Stars = () => {
   return (
