@@ -1,6 +1,5 @@
-import { BallCanvas } from "./canvas"
 import { technologies } from "../constants"
-import SectionWrapper from "../hoc/SectionWrapper"
+import { BallCanvas } from "./canvas"
 const Tech = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">

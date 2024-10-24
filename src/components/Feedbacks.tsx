@@ -1,9 +1,7 @@
-import React from "react";
-import { styles } from "../styles";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials, TypeTestimonials } from "../constants";
-import SectionWrapper from "../hoc/SectionWrapper";
+import { styles } from "../styles";
+import { fadeIn, textVariant } from "../utils/motion";
 interface Props {
   testimonial: TypeTestimonials;
   index: number;

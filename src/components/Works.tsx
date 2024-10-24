@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { Tilt } from "react-tilt";
-import { fadeIn, textVariant } from "../utils/motion";
 import { github } from "../assets";
-import SectionWrapper from "../hoc/SectionWrapper";
-import { styles } from "../styles";
 import { projects } from "../constants";
+import { styles } from "../styles";
+import { fadeIn, textVariant } from "../utils/motion";
 interface Props {
   index: number;
   name: string;
