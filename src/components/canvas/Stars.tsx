@@ -1,41 +1,54 @@
-import { PointMaterial, Points } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
-import * as random from "maath/random/dist/maath-random.cjs";
-import { Suspense, useRef } from "react";
+// import { PointMaterial, Points } from "@react-three/drei";
+// import { Canvas, useFrame } from "@react-three/fiber";
+// import * as random from "maath/random/dist/maath-random.cjs";
+// import { Suspense, useRef } from "react";
+// import { Group } from "three"; // Import for typing ref correctly
+
+// const Stars = () => {
+//   const ref = useRef<Group>(null); // Explicitly type the ref as a Group (from three.js)
+//   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+
+//   useFrame((state, delta) => {
+//     if (ref.current) {
+//       ref.current.rotation.x -= delta / 10; // Corrected spelling: 'rotation'
+//       ref.current.rotation.y -= delta / 15;
+//     }
+//   });
+
+//   return (
+//     <group rotation={[0, 0, Math.PI / 4]}>
+//       <Points ref={ref} positions={sphere} stride={3} frustumCulled>
+//         <PointMaterial
+//           transparent
+//           color="#f272c8"
+//           size={0.002}
+//           sizeAttenuation={true}
+//           depthWrite={false}
+//         />
+//       </Points>
+//     </group>
+//   );
+// };
+
+// const StarsCanvas = () => {
+//   return (
+//     <div className="w-full h-auto absolute inset-0 z-[-1]">
+//       <Canvas camera={{ position: [0, 0, 1] }}>
+//         <Suspense fallback={null}>
+//           <Stars />
+//         </Suspense>
+//       </Canvas>
+//     </div>
+//   );
+// };
+
+// export default StarsCanvas;
+import React from 'react'
 
 const Stars = () => {
-  const ref = useRef();
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
-  useFrame((state, delta) => {
-    if (ref.current) {
-      ref.current.rotaion.x -= delta / 10;
-      ref.current.rotaion.y -= delta / 15;
-    }
-  });
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled>
-        <PointMaterial
-          transparent
-          color="#f272c8"
-          size={0.002}
-          sizeAttenuation={true}
-          depthWrite={false}
-        />
-      </Points>
-    </group>
-  );
-};
-const StarsCanvas = () => {
-  return (
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense>
-          <Stars />
-        </Suspense>
-      </Canvas>
-    </div>
-  );
-};
+    <div>Stars</div>
+  )
+}
 
-export default StarsCanvas;
+export default Stars
