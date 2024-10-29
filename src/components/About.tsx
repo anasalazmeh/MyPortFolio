@@ -3,6 +3,7 @@ import { Tilt } from "react-tilt";
 import { services } from "../constants";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
+import Container from "../hoc/Container";
 interface Props{
   index:number,
   title:string,
@@ -33,7 +34,7 @@ const ServiceCard=({index,title,icon}:Props)=>{
 }
 const About = () => {
   return (
-    <>
+    <Container id="about">
       <motion.div variants={textVariant(0)}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.heroHeadText}>Overview</h2>
@@ -57,7 +58,7 @@ const About = () => {
         ))}
 
       </div>
-    </>
+    </Container>
   );
 };
 

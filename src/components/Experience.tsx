@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiences, TypeExperiences } from "../constants";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
+import Container from "../hoc/Container";
 const ExperienceCard = ({ experience }: { experience: TypeExperiences }) => {
   return (
     <VerticalTimelineElement
@@ -48,7 +49,7 @@ const ExperienceCard = ({ experience }: { experience: TypeExperiences }) => {
 };
 const Experience = () => {
   return (
-    <>
+    <Container >
       <motion.div variants={textVariant(2)}>
         <p className={styles.sectionSubText}>What have done so far</p>
         <h2 className={styles.heroHeadText}>Work experience</h2>
@@ -60,7 +61,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </Container>
   );
 };
 

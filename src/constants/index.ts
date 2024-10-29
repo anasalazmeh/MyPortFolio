@@ -8,17 +8,14 @@ import {
   html,
   css,
   reactjs,
-  redux,
+  nextjs,
   tailwind,
-  nodejs,
-  mongodb,
+  bootstrapt,
+  materialui,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  xd,
+  hela,
   carrent,
   jobit,
   tripguide,
@@ -42,19 +39,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "DOM",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Responsive Design",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "API",
     icon: creator,
   },
 ];
@@ -77,25 +74,26 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Bootstrap",
+    icon: bootstrapt,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "React JS",
+    icon: reactjs,
   },
+  {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "Material UI",
+    icon: materialui,
+  },
+
   {
     name: "Three JS",
     icon: threejs,
@@ -109,8 +107,8 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "XD",
+    icon: xd,
   },
 ];
 export interface TypeExperiences {
@@ -124,54 +122,15 @@ export interface TypeExperiences {
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    company_name: "Hela",
+    icon: hela,
+    iconBg: "#0D1C22",
+    date: "June 2024 - Now",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop and maintaining  web applications and create new page the company's website using React.js and other related technologies.",
+      "Collaborate with cross-functional teams including , project manager ,designers,backend developers, and other developers .",
+      "Implement responsive design and ensure cross-browser compatibility.",
+      "Develop and maintaining and add  new pages for dashboard",
     ],
   },
 ];

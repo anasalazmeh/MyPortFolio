@@ -1,50 +1,70 @@
-import { OrbitControls, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
-import CanvasLoader from "../Loader";
+// import { Engine, Scene, SceneEventArgs } from 'react-babylonjs';
+// import { SceneLoader, Animation, Vector3 } from '@babylonjs/core';
+// import '@babylonjs/loaders';
+
+// function ComputersCanvas() {
+//   const onSceneMount = (e: SceneEventArgs) => {
+//     const { scene } = e;
+
+//     SceneLoader.Append(
+//       "/",           
+//       "gaming_desktop_pc.glb",           
+//       scene,                  
+//       () => {
+//         console.log("Model loaded successfully!");
+//         // تنفيذ الرسوم المتحركة
+//         animateModel(scene);
+//       },
+//       null,
+//       (scene, message, exception) => {
+//         console.error("Error loading model ANAS", message, exception);
+//       }
+//     );
+//   };
+//   const animateModel = (scene:(typeof Scene)) => {
+//     const model = scene.getMeshByName("اسم_النموذج"); // استخدم الاسم الصحيح للنموذج
+//     if (model) {
+//       const animation = new Animation("moveAnimation", "position.x", 30, Animation.ANIMATIONTYPE_FLOAT, Animation.ANIMATIONLOOPMODE_CYCLE);
+//       const keys = [
+//         { frame: 0, value: model.position.x },
+//         { frame: 60, value: model.position.x + 5 },  // نهاية الحركة
+//       ];
+//       animation.setKeys(keys);
+//       model.animations.push(animation);
+//       scene.beginAnimation(model, 0, 60, true); // ابدأ الرسوم المتحركة
+//     }
+//   };
+
+//   return (
+//     <Engine antialias adaptToDeviceRatio canvasId="babylonJS">
+//       <Scene onSceneMount={onSceneMount}>
+//         <arcRotateCamera
+//           name="camera1"
+//           target={new Vector3(0, 1, 0)}
+//           alpha={Math.PI / 2}
+//           beta={Math.PI / 4}
+//           radius={10}
+//           minZ={0.1}
+//           wheelPrecision={50}
+//         />
+//         <hemisphericLight name="light1" intensity={0.7} direction={Vector3.Up()} />
+//         <directionalLight
+//           name="light2"
+//           direction={new Vector3(-1, -2, -1)}
+//           position={new Vector3(5, 10, -5)}
+//           intensity={0.5}
+//         />
+//       </Scene>
+//     </Engine>
+//   );
+// }
+
+// export default ComputersCanvas;
 
 const Computers = () => {
-  const { scene } = useGLTF("./desktop_pc/scene.gltf");
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
-      <spotLight
-      position={[-20,50,10]}
-      angle={0.12}
-      penumbra={1}
-      intensity={1}
-      castShadow
-      shadow-mapSize={1024}
-      />
-      <primitive
-        object={scene}
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-    </mesh>
-  );
-};
+    <div>Computers</div>
+  )
+}
 
-const ComputersCanvas = () => {
-  return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [20, 3, -5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers />
-      </Suspense>
-    </Canvas>
-  );
-};
-
-export default ComputersCanvas;
+export default Computers
