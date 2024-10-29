@@ -13,7 +13,7 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const schema = z.object({
     name: z.string().min(2),
-    email: z.string().email(),
+    email: z.string().email("Please enter a valid email address"),
     message: z.string().min(5),
   });
   type FormData = z.infer<typeof schema>;
@@ -33,7 +33,7 @@ const Contact = () => {
         "service_ttdqk0i",
         "template_ltlhydw",
         {
-          form_name: data.name,
+          from_name: data.name,
           to_name: "Anas Alazmeh",
           from_email: data.email,
           to_email: "anoosalazmeh@gmail.com",
@@ -88,8 +88,8 @@ const Contact = () => {
               <input
                 {...register("email")}
                 type="email"
-                name="name"
-                id="name"
+                name="email"
+                id="email"
                 placeholder="What's your email?"
                 className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium ${
                   errors.email && "border border-red-500"
@@ -104,8 +104,8 @@ const Contact = () => {
               <textarea
                 {...register("message")}
                 rows={7}
-                name="name"
-                id="name"
+                name="message"
+                id="message"
                 placeholder="What do you want to say?"
                 className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium ${
                   errors.message && "border border-red-500"
