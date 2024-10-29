@@ -6,7 +6,6 @@ import {
   Tech,
   Experience,
   Works,
-  Feedbacks,
   Contact,
 
 } from "./components";
