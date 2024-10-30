@@ -58,7 +58,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Grt in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
       </motion.div>
-      <div className=" xl:flex-row flex-col-reverse px-7 py-5 items-center justify-center flex gap-10 overflow-hidden">
+      <div className=" xl:flex-row flex-col-reverse md:px-7 py-5 items-center justify-center flex gap-10 overflow-hidden">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-1 bg-black-100 p-8  rounded-2xl w-full"
