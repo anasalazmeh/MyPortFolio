@@ -1,27 +1,28 @@
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
-import { github } from "../assets";
+import { github, URL } from "../assets";
 import { projects } from "../constants";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
+import Container from "../hoc/Container";
 interface Props {
   index: number;
   name: string;
-  description: string;
   tags: {
     name: string;
     color: string;
   }[];
   image: string;
   source_code_link: string;
+  website_link: string;
 }
 const ProjectCard = ({
   index,
   name,
-  description,
   tags,
   image,
   source_code_link,
+  website_link
 }: Props) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
@@ -51,10 +52,21 @@ const ProjectCard = ({
               />
             </div>
           </div>
+          <div className="absolute  right-0 black-gradient w-10 h-10 rounded-full top-12 flex justify-center items-center m-3 card-img_hover">
+            <div
+              onClick={() => window.open(website_link, "_blank")}
+              className="bg-white w-7 h-7 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={URL}
+                alt="url"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+          </div>
         </div>
         <div className="mt-5 ">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -69,7 +81,7 @@ const ProjectCard = ({
 };
 const Works = () => {
   return (
-    <>
+    <Container id="projects">
       <motion.div variants={textVariant(2)}>
         <p className={styles.sectionSubText}>My Projects</p>
 
@@ -87,12 +99,12 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 items-center justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </Container>
   );
 };
 

@@ -23,11 +23,15 @@ import materialui from "./tech/materialui.png";
 
 import hela from "./company/HelaLogo.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
+import GameHup from './projects/gamehub.png'
+import issuetracker from './projects/issuetracker.png'
+import add2 from './projects/add2.png'
+import templeteone from './projects/templeteone.png'
+import ecommerce from './projects/ecommerce.png'
+import HelaTech from './projects/HelaTech.png'
 import contactImg from "./contact-img.svg"
+
+import URL from './url.png'
 export {
   logo,
   logo2,
@@ -52,8 +56,12 @@ export {
   typescript,
   threejs,
   hela,
-  carrent,
-  jobit,
-  tripguide,
-  contactImg
+  URL,
+  contactImg,
+  GameHup,
+  issuetracker,
+  add2,
+  templeteone,
+  ecommerce,
+  HelaTech
 };

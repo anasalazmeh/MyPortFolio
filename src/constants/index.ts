@@ -16,10 +16,13 @@ import {
   figma,
   xd,
   hela,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  GameHup,
+  issuetracker,
+  add2,
+  templeteone,
+  ecommerce,
+  HelaTech,
 } from "../assets";
 
 export const navLinks = [
@@ -170,68 +173,142 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Ecommerce",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Matweial UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: HelaTech,
+    source_code_link: "https://github.com/",
+    website_link: "https://hela-tech.com/",
+  },
+  {
+    name: "Ecommerce",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Matweial UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Payments Online",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://github.com/",
+    website_link: "https://e-commerce-store-anas-s-projects-733ce659.vercel.app/",
+  },
+  {
+    name: "Issue Tracker",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Matweial UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: issuetracker,
+    source_code_link: "https://github.com/",
+    website_link: "https://issue-tracker-nine-chi.vercel.app/",
+  },
+  {
+    name: "GameHup",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Matweial UI",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "tailwind CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Ready API",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
+    image: GameHup,
     source_code_link: "https://github.com/",
+    website_link: "https://game-hub-six-silk-74.vercel.app/",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Add2",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: add2,
     source_code_link: "https://github.com/",
+    website_link: "https://add2.vercel.app/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Templete",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: templeteone,
     source_code_link: "https://github.com/",
+    website_link: "https://add2.vercel.app/",
   },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
