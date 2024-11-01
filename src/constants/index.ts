@@ -66,23 +66,23 @@ const services = [
 const technologies = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: bootstrapt
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: bootstrapt
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: bootstrapt
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: bootstrapt
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: bootstrapt,
   },
   {
     name: "Bootstrap",
