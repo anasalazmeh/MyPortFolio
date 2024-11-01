@@ -13,8 +13,14 @@ import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
+
+// import tailwind from "./tech/tailwind.png";
+
+import tailwind from "./tailwind.png";
+
+// import typescript from "./tech/typescript.png";
+import typescript from "./Typescript.svg.png";
+
 import threejs from "./tech/threejs.svg";
 import nextjs from "./tech/next.png";
 import bootstrapt from "./tech/bootstrap.png";

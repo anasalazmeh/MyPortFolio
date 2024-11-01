@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Navbar = () => {
   const [active, setActive] = useState("");
-  const [open, setopen] = useState(true);
+  const [open, setopen] = useState(false);
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -90,7 +90,7 @@ const Navbar = () => {
           <div
             className={`p-6 w-full flex flex-col ${
               open ? "-right-6" : "-right-96"
-            } gap-52 duration-[5s] transition-[right] h-screen black-gradient mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } gap-32 duration-[5s] transition-[right] h-screen black-gradient mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <img
               src={close}
