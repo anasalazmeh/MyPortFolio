@@ -28,7 +28,7 @@ const Hero = () => {
           alt="logo"
           className= "w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full"
         />
-        <div className="w-full translate-y-5 md:-translate-y-10 flex justify-center items-center">
+        <div className="w-full translate-y-5 md:-translate-y-12 flex justify-center items-center">
           <a href="#about">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
               <motion.div

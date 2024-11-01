@@ -113,6 +113,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.instagram-logo-gradient {
+  background: linear-gradient(30deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
 
 /* canvas- styles */
 .canvas-loader {
