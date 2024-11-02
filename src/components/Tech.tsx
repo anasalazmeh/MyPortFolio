@@ -5,7 +5,7 @@ import { BallCanvas } from "./canvas";
 const Tech = () => {
   const [mobile, setMonile] = useState(false);
   useEffect(() => {
-    if (window.screenX < 767) {
+    if (window.innerWidth < 767) {
       setMonile(true);
     }
   }, []);
