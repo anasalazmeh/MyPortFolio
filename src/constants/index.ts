@@ -3,13 +3,13 @@ import {
   backend,
   creator,
   web,
-  // javascript,
-  // typescript,
-  // html,
-  // css,
+  javascript,
+  typescript,
+  html,
+  css,
   reactjs,
   nextjs,
-  // tailwind,
+  tailwind,
   bootstrapt,
   materialui,
   git,
@@ -65,24 +65,24 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: bootstrapt
+    name: "HTML5",
+    icon: html
   },
   {
-    name: "CSS 3",
-    icon: bootstrapt
+    name: "CSS3",
+    icon: css
   },
   {
-    name: "JavaScript",
-    icon: bootstrapt
+    name: "Javascript",
+    icon: javascript
   },
   {
-    name: "TypeScript",
-    icon: bootstrapt
+    name: "Typescript",
+    icon: typescript
   },
   {
-    name: "Tailwind CSS",
-    icon: bootstrapt,
+    name: "TailwindCSS",
+    icon: tailwind,
   },
   {
     name: "Bootstrap",
