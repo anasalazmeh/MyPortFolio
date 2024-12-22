@@ -132,7 +132,7 @@ const experiences = [
     company_name: "Hela",
     icon: hela,
     iconBg: "#0D1C22",
-    date: "June 2024 - Now",
+    date: "May 2024 - November 2024",
     points: [
       "Develop and maintaining  web applications and create new page the company's website using React.js and other related technologies.",
       "Collaborate with cross-functional teams including , project manager ,designers,backend developers, and other developers .",
