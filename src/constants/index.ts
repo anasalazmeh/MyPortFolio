@@ -310,7 +310,7 @@ const projects = [
     ],
     image: templeteone,
     source_code_link: "https://github.com/",
-    website_link: "https://add2.vercel.app/",
+    website_link: "https://templete-one.vercel.app/",
   },
   
 ];
